@@ -8,9 +8,9 @@
         var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         var iframeElement = document.getElementById("iframeElement");
 
-            if (width > 1000) {
+            if (width > 1600) {
                 iframeElement.src = "/Assets/Bokeh/Flamengo_xg_vs_xga_large.html";
-            } else if (width > 600) {
+            } else if (width > 800) {
                 iframeElement.src = "/Assets/Bokeh/Flamengo_xg_vs_xga_mid.html";
             } else {
                 iframeElement.src = "/Assets/Bokeh/Flamengo_xg_vs_xga_small.html";
