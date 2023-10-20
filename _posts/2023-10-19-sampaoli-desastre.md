@@ -1,4 +1,4 @@
-## Testing
+## Sampaoli é um desastre
 
 <iframe id="iframeElement" sandbox="allow-same-origin allow-scripts" width="100%" height="600" scrolling="no" seamless="seamless" frameborder="0"></iframe>
 
@@ -8,11 +8,13 @@
         var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         var iframeElement = document.getElementById("iframeElement");
 
-        if (width > 800) {
-            iframeElement.src = "/Assets/Bokeh/Flamengo_xg_vs_xga.html";
-        } else {
-            iframeElement.src = "/Assets/Bokeh/epl.html";
-        }
+            if (width > 1000) {
+                iframeElement.src = "/Assets/Bokeh/Flamengo_xg_vs_xga_large.html";
+            } else if (width > 600) {
+                iframeElement.src = "/Assets/Bokeh/Flamengo_xg_vs_xga_mid.html";
+            } else {
+                iframeElement.src = "/Assets/Bokeh/Flamengo_xg_vs_xga_small.html";
+            }
     }
 
     // Call the function when the page loads and when the window is resized
